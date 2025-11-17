@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>three.js webgl - FBX loader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./css/main.css">
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #three-container {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+            position: relative;
+        }
+
+        h3, #info {
+            position: absolute;
+            z-index: 10;
+            margin: 10px;
+            color: white;
+        }
+
+        h3 {
+            top: 0;
+            left: 0;
+        }
+
+        #info {
+            top: 0;
+            right: 0;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Daniel Rodriguez Del Valle</h3>
+
+    <div id="info">
+        <a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - FBXLoader Escenarios 3D<br>
+        
+
+   
+    <div id="three-container"></div>
+
+    <!-- IMPORTMAP -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./build/three.module.js",
+                "three/addons/": "./jsm/"
+            }
+        }
+    </script>
+
+    <!-- TU SCRIPT -->
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
